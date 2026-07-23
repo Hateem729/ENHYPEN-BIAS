@@ -46,7 +46,7 @@ ENHYPEN-BIAS-FOR-ENGENES/
 ├── README.md
 │
 ├── images/
-│   ├──jungwon.jpg
+│   ├──https://github.com/Hateem729/ENHYPEN-BIAS/blob/ab51e47815920ab1ee5e32a035aeb16574550250/images/images/jungwon.jpg
 │   ├── heeseung.jpg
 │   ├── jay.jpg
 │   ├── jake.jpg
