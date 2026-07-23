@@ -65,7 +65,8 @@ ENHYPEN-BIAS-FOR-ENGENES/
                    <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/ff515bc9-c1d1-4240-8a6d-42f98d943651" />
   
 │   └── niki.jpg
-                https://github.com/Hateem729/ENHYPEN-BIAS/blob/35651d4750c8c348f72e81d229307c59f87bcf99/images/images/niki.jpg
+                   <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/3a4a24b8-86cd-4070-80f6-01a0ea2e1685" />
+
 
 ```
 
