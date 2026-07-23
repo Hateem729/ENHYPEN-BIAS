@@ -1,124 +1,84 @@
-const page1 = document.getElementById("page1");
-const page2 = document.getElementById("page2");
-const page3 = document.getElementById("page3");
+// Smooth scrolling
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-document.getElementById("startBtn").onclick = () => {
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
 
-page1.classList.add("hidden");
-page2.classList.remove("hidden");
+// Fade-in animation
+const cards = document.querySelectorAll(".card");
 
-};
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+});
 
-const memberData = {
+cards.forEach(card => {
+    card.style.opacity = "0";
+    card.style.transform = "translateY(60px)";
+    card.style.transition = "all 0.8s ease";
+    observer.observe(card);
+});
 
-jungwon:{
-name:"Yang Jungwon",
-age:"Age: 22",
-birthday:"Birthday: February 9, 2004",
-nationality:"Nationality: Korean",
-position:"Leader",
-image:"images/jungwon.jpg",
-qualities:["Responsible","Cute","Talented","Calm"]
-},
+// Card tilt effect
+cards.forEach(card => {
 
-heeseung:{
-name:"Lee Heeseung",
-age:"Age: 24",
-birthday:"Birthday: October 15, 2002",
-nationality:"Nationality: Korean",
-position:"Main Vocalist",
-image:"images/heeseung.jpg",
-qualities:["All-rounder","Hardworking","Kind","Charismatic"]
-},
+    card.addEventListener("mousemove",(e)=>{
 
-jay:{
-name:"Park Jongseong (Jay)",
-age:"Age: 24",
-birthday:"Birthday: April 20, 2002",
-nationality:"Nationality: Korean-American",
-position:"Rapper",
-image:"images/jay.jpg",
-qualities:["Funny","Confident","Caring","Stylish"]
-},
+        const rect = card.getBoundingClientRect();
 
-jake:{
-name:"Jake Sim",
-age:"Age: 23",
-birthday:"Birthday: November 15, 2003",
-nationality:"Nationality: Australian",
-position:"Vocalist",
-image:"images/jake.jpg",
-qualities:["Sweet","Friendly","Gentle","Loyal"]
-},
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-sunghoon:{
-name:"Park Sunghoon",
-age:"Age: 23",
-birthday:"Birthday: December 8, 2003",
-nationality:"Nationality: Korean",
-position:"Visual",
-image:"images/sunghoon.jpg",
-qualities:["Elegant","Cool","Hardworking","Calm"]
-},
+        const rotateY = (x / rect.width - 0.5) * 20;
+        const rotateX = (0.5 - y / rect.height) * 20;
 
-sunoo:{
-name:"Kim Sunoo",
-age:"Age: 23",
-birthday:"Birthday: June 24, 2003",
-nationality:"Nationality:" +
-" Korean",
-position:"Vocalist",
-image:"images/sunoo.jpg",
-qualities:["Cheerful","Cute","Bright","Lovely"]
-},
+        card.style.transform =
+        `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.03)`;
 
-niki:{
-name:"Nishimura Riki (Ni-ki)",
-age:"Age: 20",
-birthday:"Birthday: December 9, 2005",
-nationality:"Nationality: Japanese",
-position:"Main Dancer",
-image:"images/niki.jpg",
-qualities:["Amazing Dancer","Energetic","Funny","Hardworking"]
-}
+    });
 
-};
+    card.addEventListener("mouseleave",()=>{
 
-document.querySelectorAll(".member").forEach(button=>{
+        card.style.transform =
+        "perspective(1000px) rotateX(0) rotateY(0) scale(1)";
 
-button.onclick=()=>{
-
-let selected=button.dataset.member;
-
-let member=memberData[selected];
-
-page2.classList.add("hidden");
-page3.classList.remove("hidden");
-
-document.getElementById("memberImage").src=member.image;
-document.getElementById("memberName").innerHTML=member.name;
-document.getElementById("memberAge").innerHTML=member.age;
-document.getElementById("memberBirthday").innerHTML=member.birthday;
-document.getElementById("memberNationality").innerHTML=member.nationality;
-document.getElementById("memberPosition").innerHTML=member.position;
-
-let list=document.getElementById("qualities");
-
-list.innerHTML="";
-
-member.qualities.forEach(q=>{
-
-list.innerHTML+=`<li>💙 ${q}</li>`;
+    });
 
 });
 
-};
+// Hero title animation
+const title = document.querySelector(".hero h1");
+
+setInterval(() => {
+
+    title.style.textShadow =
+    "0 0 15px #ff003c, 0 0 35px #b400ff";
+
+    setTimeout(() => {
+
+        title.style.textShadow =
+        "0 0 25px #ff003c";
+
+    },700);
+
+},2000);
+
+// Welcome message
+window.addEventListener("load",()=>{
+
+    setTimeout(()=>{
+
+        alert("❤️ Welcome ENGENE! Enjoy the ENHYPEN BIAS website ❤️");
+
+    },500);
 
 });
-
-document.getElementById("nextBtn").onclick=()=>{
-
-alert("Next page coming in Step 5!");
-
-};
-
