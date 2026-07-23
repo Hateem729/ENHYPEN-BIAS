@@ -53,10 +53,11 @@ ENHYPEN-BIAS-FOR-ENGENES/
                    <img width="490" height="490" alt="image" src="https://github.com/user-attachments/assets/6552927d-b368-494a-afd5-8f91ebc85ec8" />
 
 │   ├── jay.jpg
-               <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/483f1ef1-e52d-4332-a0bf-fb4b8b80b5ac" />
+                   <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/483f1ef1-e52d-4332-a0bf-fb4b8b80b5ac" />
 
 │   ├── jake.jpg
-                https://github.com/Hateem729/ENHYPEN-BIAS/blob/0083129438101cabb142ca59d5fe22e43b238fc9/images/images/jake.jpg
+                   <img width="450" height="450" alt="image" src="https://github.com/user-attachments/assets/7d4d87b7-4e0c-4757-a9d4-e6ecbc1cfa7e" />
+
 │   ├── sunghoon.jpg
                 https://github.com/Hateem729/ENHYPEN-BIAS/blob/a643c97d47c4d76a242731c7003416fb97eae56a/images/images/sunghoon.jpg
 │   ├── sunoo.jpg
