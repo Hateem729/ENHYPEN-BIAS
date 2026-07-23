@@ -53,9 +53,7 @@ ENHYPEN-BIAS-FOR-ENGENES/
 │   ├── sunghoon.jpg
 │   ├── sunoo.jpg
 │   └── niki.jpg
-│
-└── music/
-    └── enhypen.mp3
+
 ```
 
 ---
