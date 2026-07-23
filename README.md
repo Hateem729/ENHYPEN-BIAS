@@ -57,6 +57,7 @@ ENHYPEN-BIAS-FOR-ENGENES/
 │   ├── sunghoon.jpg
                 https://github.com/Hateem729/ENHYPEN-BIAS/blob/a643c97d47c4d76a242731c7003416fb97eae56a/images/images/sunghoon.jpg
 │   ├── sunoo.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/38503cfdcd35b1e148e4ad43d1c5293e054b36e7/images/images/sunoo.jpg
 │   └── niki.jpg
 
 ```
