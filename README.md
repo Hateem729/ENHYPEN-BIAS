@@ -46,11 +46,16 @@ ENHYPEN-BIAS-FOR-ENGENES/
 ├── README.md
 │
 ├── images/image
-│   ├──https://github.com/Hateem729/ENHYPEN-BIAS/blob/ab51e47815920ab1ee5e32a035aeb16574550250/images/images/jungwon.jpg
-│   ├── https://github.com/Hateem729/ENHYPEN-BIAS/blob/b8de41a88e0d8b0719a67a44cb9125da11bee7e4/images/images/heeseung.jpg
-│   ├── https://github.com/Hateem729/ENHYPEN-BIAS/blob/9a7a5f8fe525bd23df33801b87296c7672172f9d/images/images/jay.jpg
-│   ├── https://github.com/Hateem729/ENHYPEN-BIAS/blob/0083129438101cabb142ca59d5fe22e43b238fc9/images/images/jake.jpg
+│   ├── jungwon.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/ab51e47815920ab1ee5e32a035aeb16574550250/images/images/jungwon.jpg
+│   ├── heeseung.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/b8de41a88e0d8b0719a67a44cb9125da11bee7e4/images/images/heeseung.jpg
+│   ├── jay.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/9a7a5f8fe525bd23df33801b87296c7672172f9d/images/images/jay.jpg
+│   ├── jake.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/0083129438101cabb142ca59d5fe22e43b238fc9/images/images/jake.jpg
 │   ├── sunghoon.jpg
+                https://github.com/Hateem729/ENHYPEN-BIAS/blob/a643c97d47c4d76a242731c7003416fb97eae56a/images/images/sunghoon.jpg
 │   ├── sunoo.jpg
 │   └── niki.jpg
 
