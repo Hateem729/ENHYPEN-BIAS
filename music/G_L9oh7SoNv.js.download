@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("InstagramStringUtils",[],(function(t,n,r,o,a,i){"use strict";function e(e){return e===""?e:e[0].toUpperCase()+e.slice(1).toLowerCase()}function l(e,t){var n=t.maxLength,r=t.omission,o=t.preferredCutoff,a=Array.from(e);if(a.length<=n)return e;var i=Array.from(r),l=n-i.length;if(l<1)return r;var s=a.slice(0,l).join("");if(o==null||e.slice(l).search(o)===0)return s+r;for(var u=new RegExp(o.source,o.flags+(o.global?"":"g")),c,d;d=u.exec(s);)c=d.index;return s.slice(0,c!=null?c:l)+r}i.lowercaseAndCapitalizeFirst=e,i.truncate=l}),66);
